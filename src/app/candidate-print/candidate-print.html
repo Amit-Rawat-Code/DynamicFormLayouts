@@ -1,0 +1,22 @@
+<div class="print-container">
+  <h2 class="text-center">Candidate Form Summary</h2>
+
+  <div *ngFor="let section of layout">
+    <h4>{{ section.name }}</h4>
+    <hr />
+
+    <div class="row">
+      <div *ngFor="let field of section.fields" class="col-md-6 mb-2">
+        <strong>{{ field.label }}:</strong>
+
+        <span>
+          <span>
+            {{ getDisplayValue(formData[field.id]) }}
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-primary mt-3" (click)="printPage()">Print / Save as PDF</button>
+</div>

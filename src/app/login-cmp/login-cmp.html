@@ -1,0 +1,23 @@
+<div class="login-container">
+
+  <h3>Candidate Login</h3>
+
+  <input
+    type="text"
+    class="form-control mb-2"
+    placeholder="Enter Name"
+    [(ngModel)]="loginData.name"
+  />
+
+  <input
+    type="email"
+    class="form-control mb-2"
+    placeholder="Enter Email"
+    [(ngModel)]="loginData.email"
+  />
+
+  <button class="btn btn-primary" (click)="login()">
+    Login
+  </button>
+
+</div>

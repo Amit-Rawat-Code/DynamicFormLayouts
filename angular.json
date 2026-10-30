@@ -64,6 +64,9 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "port": 4500
+          },
           "configurations": {
             "production": {
               "buildTarget": "DynamicFormLayouts:build:production"
